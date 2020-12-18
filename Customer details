@@ -5,6 +5,7 @@ public class CustomerDetails
  
  int CustomerId;
  String CustomerName;
+ String CustomerGemail;
  
  
  public void getEnterd() 
@@ -15,6 +16,9 @@ public class CustomerDetails
   System.out.print("Input the CustomerId : ");
   CustomerName = aa.nextLine();
   System.out.print("Input the CustomerName :: ");
+   CustomerGemail = aa.nextLine();
+  System.out.print("Input the CustomerGemail :: ");
+  
   
  }
  
@@ -22,6 +26,7 @@ public class CustomerDetails
  
   System.out.println("CustomerId is = " + CustomerId);
   System.out.println("CustomerName is = " + CustomerName);
+   System.out.println("CustomerGemail is = " + CustomerGemail);
  
  }
  
