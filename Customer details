@@ -1,0 +1,45 @@
+import java.util.Scanner;
+ 
+public class CustomerDetails 
+{
+ 
+ int CustomerId;
+ String CustomerName;
+ 
+ 
+ public void getEnterd() 
+{
+ 
+  Scanner aa = new Scanner(System.in);
+  CustomerId  = aa.nextInt();
+  System.out.print("Input the CustomerId : ");
+  CustomerName = aa.nextLine();
+  System.out.print("Input the CustomerName :: ");
+  
+ }
+ 
+ public void shows() {
+ 
+  System.out.println("CustomerId is = " + CustomerId);
+  System.out.println("CustomerName is = " + CustomerName);
+ 
+ }
+ 
+ public static void main(String[] args) {
+ 
+ CustomerDetails c[] = new CustomerDetails[4];
+ 
+  for(int i=0; i<4; i++) {
+   
+   c[i] = new CustomerDetails();
+   c[i].getEnterd();
+  }
+ 
+  System.out.println("**** Data Entered as below ****");
+ 
+  for(int i=0; i<4; i++) {
+   
+   c[i].shows();
+  }
+ }
+}
